@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'mrglovani';
+  src: url(../Fonts/bpg_mrgvlovani_caps_2010.ttf);
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: 'mrglovani', sans-serif !important;
+  color: #28273c;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #28273c;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f7c018;
+}
+
+.navbar-costom {
+  color: #28273c;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0px 5px 0px grey;
+          box-shadow: 0 0px 5px 0px grey;
+}
+
+.bg-image {
+  background-image: url("../Imgs/taxi_forheader.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 76px !important;
+  height: 100vh;
+}
+
+.mask .header-h1 {
+  color: #f7c018;
+  padding-top: 20px;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  background-color: #0d6efd;
+  -webkit-animation: h1-anime 4s ease-in-out infinite;
+          animation: h1-anime 4s ease-in-out infinite;
+}
+
+.mask .btn-reg {
+  -webkit-box-shadow: 0 0px 5px 5px #0dafa8;
+          box-shadow: 0 0px 5px 5px #0dafa8;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mask .btn-reg:hover {
+  -webkit-box-shadow: 0 0px 5px 1px #f7c018;
+          box-shadow: 0 0px 5px 1px #f7c018;
+}
+
+@-webkit-keyframes h1-anime {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes h1-anime {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-us {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7c018), to(#0dafa8));
+  background: linear-gradient(0deg, #f7c018, #0dafa8);
+  background-size: 400% 400%;
+  background-position: top;
+  -webkit-transition: background-position 1s;
+  transition: background-position 1s;
+  -webkit-box-shadow: 0 3px 10px 3px #f7c018;
+          box-shadow: 0 3px 10px 3px #f7c018;
+}
+
+.about-us:hover {
+  background-position: bottom;
+}
+
+.about-us .about-us-span {
+  color: #28273c;
+}
+
+.about-us h2 {
+  color: #28273c;
+}
+
+.about-us .about-textinfo {
+  line-height: 30px;
+}
+
+.advantage-item {
+  border: 1px solid #002a51;
+  border-radius: 20px;
+  background: #28273c;
+  color: #eee;
+  font-size: 18px;
+}
+
+.advantage-item i {
+  text-shadow: 0 0 15px #f7c018, 0 0 20px #f7c018, 0 0 25px #f7c018;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.advantage-1 li, .advantage-2 li {
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.advantage-1 li:last-child {
+  border-bottom: none;
+}
+
+.advantage-2 li:last-child {
+  border-bottom: none;
+}
+
+.advantage-1 li:first-child {
+  border-bottom: none;
+}
+
+.advantage-2 li:first-child {
+  border-bottom: none;
+}
+
+.advantage-item .item-noborder {
+  border: none;
+}
+
+.advantage-item .advantage-item_status {
+  font-size: 30px;
+  background-color: #f7c018;
+  text-align: center;
+  border-top-right-radius: 19px;
+  border-top-left-radius: 19px;
+  color: #28273c;
+}
+
+ul.advantage-1 {
+  margin-left: -32px;
+}
+
+ul.advantage-2 {
+  margin-left: -32px;
+}
+
+section .job-section {
+  height: 100vh;
+}
+
+section .job-span {
+  color: #f7c018;
+}
+
+section input[type=text] {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  color: #eee;
+  padding-left: 20px;
+  background-color: #28273c;
+}
+
+section input[type=text]:focus {
+  border: none;
+  outline: none;
+}
+
+section .btn-send {
+  -webkit-box-shadow: 0 0px 5px 5px #0dafa8;
+          box-shadow: 0 0px 5px 5px #0dafa8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+section .btn-send:hover {
+  -webkit-box-shadow: 0 0px 5px 1px #f7c018;
+          box-shadow: 0 0px 5px 1px #f7c018;
+}
+
+section .reg-on-job {
+  border: 1px solid #28273c;
+  background: transparent;
+  border-radius: 15px;
+  padding: 25px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #f7c018;
+}
+
+footer a:hover {
+  color: #0dafa8;
+}
+
+.footer-section {
+  background-color: #0dafa8;
+}
+
+.footer-section .copyright-option {
+  background-color: #28273c !important;
+  height: 10vh;
+  color: #f7c018;
+}
+
+.footer-section .fn-form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+  background: #28273c;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #f7c018;
+}
+
+.footer-section .fn-form input:focus {
+  outline: none;
+}
+
+.footer-section .fn-form {
+  position: relative;
+}
+
+.footer-section .fn-form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  background: #222b4a;
+  color: #ffffff;
+  padding: 0 16px;
+  height: 50px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+
+.footer-section .fa-social a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #5A4D48;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 7px;
+}
+
+.footer-section .footer-text .ft-about .fa-social a:hover {
+  background: #28273c;
+  border: none;
+}
+
+.footer-section .ft-contact {
+  line-height: 15px;
+}
+
+/* for responsive */
+@media screen and (max-width: 991px) {
+  .advantage-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 441px) {
+  .advantage-item {
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
